@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="inicio">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../jquery/jquery-2.1.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+    <script src="../angular/app.js"></script>
+    <title>Reportes</title>
+</head>
+<body ng-controller="productos" >
+    <div class="container mt-3">    
+        <div class="row" >
+            <div class="col-md-10">
+                <form action="#" class="form-inline" method"POST"> 
+                    <label for="nombre" class="mr-2">Buscar Por Nombre</label>
+                    <input type="text" id="nombre" ng-model="buscar" name="nombre" class="mr-3 form-control col-4" >
+                    <input type="submit" name="buscar"  id="buscar" value="Buscar" class="btn btn-primary mr-2" >
+                   
+                </form>
+                    <table class="table table-striped table-hover mt-3">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Pais Origen</th>
+                        <th>Pais Destino</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                        
+                    </thead>
+                    <tbody>
+                        
+                        <tr ng-repeat="empleado in empleados | filter : buscar ">
+                            <td>{{empleado.nombre}}</td>
+                            <td>{{empleado.Descripcion}}</td>
+                            <td>{{empleado.origen}}</td>
+                            <td>{{empleado.destino}}</td>
+                            <td><a href="actualizarProducto.php?id={{empleado.id}}"><input type="button" value="Editar" class="btn btn-success"></a></td>
+                            <td><a href="../backend/eliminarp.php?id={{empleado.id}}"><input type="button" value="Eliminar" class="btn btn-danger"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="align-content-end">
+                    <a href="../index.html"><input type="button" name="buscar"  id="buscar" value="Regresar" class="btn btn-success mr-2"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
