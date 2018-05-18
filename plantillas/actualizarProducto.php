@@ -29,6 +29,7 @@
     <script src="../angular/angular.min.js"></script>
     <script src="../angular/app.js"></script>
     <title>Registrar Producto</title>
+    
 </head>
 <body >
     <div class="container">    

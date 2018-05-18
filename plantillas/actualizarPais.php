@@ -18,6 +18,7 @@
     <script src="../angular/angular.min.js"></script>
     <script src="../angular/app1.js"></script>
     <title>Registrar Pais</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body ng-controller="pais">
     <div class="container mt-3">
