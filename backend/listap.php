@@ -11,7 +11,6 @@ header('Content-Type: text/html; charset=utf-8');
 	}
 	 
 	$conexion->set_charset("utf8") ;
-
 	 $result =$conexion->query("SELECT  * FROM pais");
 
  	$resultadoOrdenado = array();
