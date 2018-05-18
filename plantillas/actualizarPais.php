@@ -17,7 +17,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../angular/angular.min.js"></script>
     <script src="../angular/app1.js"></script>
-    <title>Registrar Pais</title>
+    <title>Actualizar Pais</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body ng-controller="pais">
