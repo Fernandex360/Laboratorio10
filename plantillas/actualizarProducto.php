@@ -28,8 +28,8 @@
     <script src="../jquery/validacion.js"></script>
     <script src="../angular/angular.min.js"></script>
     <script src="../angular/app.js"></script>
-    <title>Registrar Producto</title>
-    
+    <title>Actualizar Producto</title>
+
 </head>
 <body >
     <div class="container">    
